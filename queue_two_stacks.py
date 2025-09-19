@@ -12,8 +12,8 @@ class Queue:
     def dequeue(self):
         # TODO: Implement
 
-        if len(self.stack2) == 0 & len(self.stack1 !=0):
-            self.stack2.push(self.stack1.pop())
+        if len(self.stack2) == 0 and len(self.stack1 !=0):
+            self.stack2.append(self.stack1.pop())
 
     def peek(self):
         # TODO: Implement
@@ -25,6 +25,7 @@ class Queue:
 
     def get_size(self):
         # TODO: Implement
-        print('Length of stack 1:' , len(self.stack1))
+        print('Length of stack 1: ') , len(self.stack1))
         print('Length of stack 2: '), len(self.stack2)
         return len(self.stack1), len(self.stack2)
+
